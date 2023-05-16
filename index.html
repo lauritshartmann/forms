@@ -9,15 +9,26 @@
 </head>
 
 <body>
-    <h1>Min form</h1>
     <main>
+        <h1>Min form</h1>
+
         <form name="laurits formular" netlify>
-            <div class="formfield"> <label for="firstname">First name</label> <input id="firstname"
-                    name="userfirstname"> </div>
-            <div class="formfield"> <label for="lastname">Last name</label> <input id="lastname" name="userlastname">
-            </div>
+            <label>
+                Navn
+                <input placeholder="Navn" type="text" name="navn" required>
+            </label>
+            <label>
+                Email
+                <input placeholder="Email" type="email" name="email" required>
+            </label>
+            <label>
+                Profil
+                <select name="liste">
+                    <option value="">Vælg Profil</option>
+                    <option value="studerende">Studerende</option>
+                </select>
+            </label>
             <button type="submit">Send</button>
-            <p>Tak</p>
         </form>
     </main>
 </body>
